@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="./Adidas_Logo.svg.png" alt="" class="logo">
+            <ul>
+                <li><a href="#" id="Tenis">Tenis</a></li>
+                <li><a href="#" id="Lojas">Lojas</a></li>
+                <li><a href="#" id="Roupas">Roupas</a></li>
+                <li><a href="#" id="Esportivo">Esportivo</a></li>
+            </ul>
+            <a href="a" class="btn">Reserve Now</a>
+        </nav>
+        <div class="info">
+            <div>
+            <h2 id="seg">Sustentabilidade</h2>
+        </div>
+            <div>
+                <h2 id="mph">Inovação</h2>
+            </div>
+            <div>
+                <h2 id="mi">Conforto</h2>
+            </div>
+            <div class="line"></div>
+            <div>
+                <h2 id="model">Desde 1949</h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let header = document.getElementById('header')
+    let tenis = document.getElementById('Tenis')
+    let lojas = document.getElementById('Lojas')
+    let roupas = document.getElementById('Roupas')
+    let esportivo = document.getElementById('Esportivo')
+    tenis.onclick = function(){
+        header.style.backgroundImage = "url(./tenisadidas.png)"
+        model.innerHTML = "Conheça mais modelos"
+        seg.innerHTML = "Nova geração"
+        mph.innerHTML = "Sustentabilidade"
+        mi.innerHTML = "Experiência"
+    }
+
+    lojas.onclick = function(){
+        header.style.backgroundImage = "url(./lojas.png)"
+        model.innerHTML = "Visite nossas lojas online"
+        seg.innerHTML = "Experiência personalizada"
+        mph.innerHTML = "Produtos a fácil acesso"
+        mi.innerHTML = "Em todos lugares"
+    }
+    roupas.onclick = function(){
+        header.style.backgroundImage = "url(./roupas.png)"
+        model.innerHTML = "Conheça mais modelos"
+        seg.innerHTML = "Nova geração"
+        mph.innerHTML = "Sustentabilidade"
+        mi.innerHTML = "Experiência"
+    }
+    esportivo.onclick = function(){
+        header.style.backgroundImage = "url(./esportes.png)"
+        model.innerHTML = "Para seus treinos"
+        seg.innerHTML = "Estiloso"
+        mph.innerHTML = "Conforto"
+        mi.innerHTML = "Flexível"
+    }
+</script>
+</html> 
